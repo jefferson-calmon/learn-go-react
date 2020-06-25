@@ -1,0 +1,38 @@
+.container{
+    background: #F0F0F5 0% 0% no-repeat padding-box;
+    min-height: 100vh;
+    padding: 0 75px;
+}
+
+#topo{
+    padding: 51px 0;
+    display: flex;
+    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.corp{
+    width: 195px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* background: red; */
+    font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+    color: #707070;
+}
+
+.corp .image-logo-corporation{
+    width: 32%;
+}
+
+.corp .textTitle{
+    font-size: 20px;
+}
+
+.corp .text{
+    font-size: 13px;
+    display: block;
+    float: right;
+}

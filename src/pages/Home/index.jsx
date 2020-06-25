@@ -2,6 +2,17 @@ import React from 'react';
 
 import './styles.css';
 
+
+import Telefone from './assets/telefone.png';
+import Whatsapp from "./assets/whatsapp.png";
+import Mail from "./assets/email.png";
+import CourseFree from "./assets/free.png";
+import OnlineForever from "./assets/online.png";
+import Certificade from "./assets/certificado.png";
+import FlexTime from "./assets/calendar.png";
+import LearnInLive from "./assets/live.png";
+import AvaliableTeste from "./assets/test.png";
+
 const Home = () => {
     return(
         <div class="container">
@@ -48,7 +59,7 @@ const Home = () => {
 
                         <div class="box">
                             <div class="boxImg">
-                                <img src="./assets/free.png" alt="Cursos gratuitos" />
+                                <img src={CourseFree} alt="Cursos gratuitos" />
                             </div>
 
                             <div class="boxText">
@@ -57,7 +68,7 @@ const Home = () => {
                         </div>
                         <div class="box">
                             <div class="boxImg">
-                                <img src="./assets/online.png" alt="Cursos gratuitos" />
+                                <img src={OnlineForever} alt="Cursos gratuitos" />
                             </div>
                             <div class="boxText">
                                 <h3>Totalmente online</h3>
@@ -65,7 +76,7 @@ const Home = () => {
                         </div>
                         <div class="box">
                             <div class="boxImg">
-                                <img src="./assets/certificado.png" alt="Cursos gratuitos"/>
+                                <img src={Certificade} alt="Cursos gratuitos"/>
                             </div>
                             <div class="boxText">
                                 <h3>Certificação válida em todo território nacional</h3>
@@ -73,7 +84,7 @@ const Home = () => {
                         </div>
                         <div class="box">
                             <div class="boxImg">
-                                <img src="./assets/calendar.png" alt="Cursos gratuitos"/>
+                                <img src={FlexTime} alt="Cursos gratuitos"/>
                             </div>
                             <div class="boxText">
                                 <h3>Horário flexível</h3>
@@ -81,7 +92,7 @@ const Home = () => {
                         </div>
                         <div class="box">
                             <div class="boxImg">
-                                <img src="./assets/live.png" alt="Cursos gratuitos"/>
+                                <img src={LearnInLive} alt="Cursos gratuitos"/>
                             </div>
                             <div class="boxText">
                                 <h3>Aulas ao vivo direto com professor</h3>
@@ -89,13 +100,48 @@ const Home = () => {
                         </div>
                         <div class="box">
                             <div class="boxImg">
-                                <img src="./assets/test.png" alt="Cursos gratuitos"/>
+                                <img src={AvaliableTeste} alt="Cursos gratuitos"/>
                             </div>
                             <div class="boxText">
                                 <h3>Atividades e testes onlines na plataforma</h3>
                             </div>
                         </div>
 
+                    </div>
+
+                    <a href="/started">
+                        <button class="init">
+                            Começar agora
+                        </button>
+                    </a>
+                </section>
+
+                <section id="help">
+                    <div class="pdt"></div>
+                    <h1>Ajuda</h1>
+                    <h2>Entre em contato com a nossa equipe</h2>
+
+                    <div class="contentHelp">
+                        <a href="#top">
+                            <div class="boxHelp">
+                                <div class="boxIcon"><img src={Telefone} alt="Telefone"/></div>
+                                <div class="boxTextHelp"><h3>Telefone</h3></div>
+                            </div>
+                        </a>
+
+                        <a  href="#top">
+                            <div class="boxHelp">
+                                <div class="boxIcon"><img src={Whatsapp} alt="Whatsapp"/></div>
+                                <div class="boxTextHelp"><h3>Whatsapp</h3></div>
+                            </div>
+                        </a>
+
+                        <a  href="#top">
+                            <div class="boxHelp">
+                                <div class="boxIcon"><img src={Mail} alt="Email"/></div>
+                                <div class="boxTextHelp"><h3>E-mail</h3></div>
+                            </div>
+                        </a>
                     </div>
                 </section>
 
