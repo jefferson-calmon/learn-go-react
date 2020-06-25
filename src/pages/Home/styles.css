@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, input, button{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container, html, body{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url('./assets/banner.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner .header{
+    color: #ffffff;
+    /* height: 67.5px; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background: transparent;
+    z-index: 1;
+}
+
+.header h1 a{
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
+    /* font-weight: bolder; */
+    font-size: 27px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.header nav ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+}
+
+.header nav ul li{
+    margin-left: 33px;
+    list-style: none;
+    position: relative;
+}
+
+.header nav ul li::before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    visibility: hidden;
+    float: left;
+    height: 3px;
+    background: #fff;
+    transform-origin: left;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.header nav ul li:hover::before{
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.banner .info-box{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.13);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info-box .contentBanner{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+.contentBanner h1{
+    font-size: 50px;
+    color: #fff;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
+.contentBanner h2{
+    font-size: 20px;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+
+section.content{
+    width: 70%;
+    min-height: 100vh;
+    margin: auto;
+    color: #262626;
+    padding: 50px 0;
+}
+
+section.content img{
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.content p{
+    line-height: 28px;
+    font-size: 19px;
+    text-indent: 30px;
+    margin-bottom: 30px;
+}
+
+section.content section{
+    margin: 30px 0;
+}
+
+.pdt{
+    height: 1px;
+}
+
+section.content section h1{
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    border-left: 7px solid #0000ff;
+    margin-top: 90px;
+}
+
+#courses .contentCourse{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.box{
+    width: 260px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.137);
+    padding: 20px 5px;
+    transition: .4s;
+    /* position: relative; */
+}
+
+.box:hover{
+    transform: translateY(-10px);
+}
+
+.box .boxImg img{
+    /* border-radius: 50%; */
+    width: 115px;
+    margin-bottom: 30px;
+}
+
+.box .boxText h3{
+    text-align: center;
+    font-size: 17px;
+}
+
+.init{
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 50px;
+    padding: 15px 20px;
+    background: blue;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.init:hover{
+    box-shadow: 4px 4px 5px #0000ff4d;
+}
+
+#help{
+    min-height: 100vh;
+}
+
+#help h1{
+    margin-bottom: 30px;
+}
+
+#help h2{
+    margin-bottom: 80px;
+}
+
+.contentHelp{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.boxHelp{
+    transition: 0.5s;
+}
+
+.boxHelp:hover{
+    transform: scale(1.2);
+}
+
+.boxHelp .boxIcon img{
+    width: 50px;
+}
+
+.boxHelp .boxTextHelp{
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background: #0000ff;
+}
+
+footer div{
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #fff;
+}
