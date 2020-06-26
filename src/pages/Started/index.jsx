@@ -34,7 +34,7 @@ const Started = () => {
                             <img src={Light} alt="Logo corporation"/>
                         </div>
     
-                        <div className="text"><span className="textTitle">Light Corp.</span><br/> A hackathon company.</div>
+                        <div className="text"><span className="textTitle">Learn Go</span><br/> A education plataform.</div>
                     </div>
                 </a>
 
@@ -151,13 +151,20 @@ const Started = () => {
                 <div className="close" onClick={showMessage}>
                     <FaTimes />
                 </div>
-                <h1>Primeiro passos</h1>
-
-                <p>Parabens por ter chegado até aqui, isso significa que você realmente quer aprender.</p>
-                <p>Nesta página você podera dar os seus primeiros passos, vendo os vídeos que selecionamos para você.</p>
-
-                <p>É importante que você assista todos antes de continuar, Boa sorte</p>
-                <p className="credito">-Equipe vencedora</p>
+                <div className="blob">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#0000ff" d="M42,-75.9C51.4,-67.3,53.9,-49.9,61.2,-35.8C68.4,-21.7,80.3,-10.9,82.5,1.2C84.6,13.3,76.9,26.7,69.4,40.3C61.9,53.8,54.5,67.7,42.9,76.4C31.4,85,15.7,88.4,-0.1,88.6C-15.9,88.8,-31.8,85.8,-43.2,77C-54.5,68.2,-61.4,53.8,-66.6,40C-71.9,26.2,-75.7,13.1,-78.3,-1.5C-81,-16.2,-82.5,-32.4,-75.4,-43C-68.4,-53.7,-52.7,-58.9,-38.7,-64.9C-24.7,-70.9,-12.3,-77.6,2,-81C16.3,-84.4,32.6,-84.5,42,-75.9Z" transform="translate(100 100)" />
+                </svg>
+                    <div className="message">
+                        <h1>Primeiro passos</h1>
+        
+                        <p>Parabens por ter chegado até aqui, isso significa que você realmente quer aprender.</p>
+                        <p>Nesta página você podera dar os seus primeiros passos, vendo os vídeos que selecionamos para você.</p>
+        
+                        <p>É importante que você assista todos antes de continuar, Boa sorte</p>
+                        <p className="credito">-Learn Go</p>
+                    </div>
+                </div>
             </section>
         </div>
     )

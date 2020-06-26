@@ -138,7 +138,7 @@ class Top extends React.Component{
                                 <img src={Light} alt="Logo corporation"/>
                             </div>
     
-                            <div className="text"><span className="textTitle">Light Corp.</span><br/> A hackathon company.</div>
+                            <div className="text"><span className="textTitle">Learn Go</span><br/> A education plataform.</div>
                         </div>
                     </a>
 

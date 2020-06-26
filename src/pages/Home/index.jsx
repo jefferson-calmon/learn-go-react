@@ -18,7 +18,7 @@ const Home = () => {
         <div class="container">
             <section class="banner">
                 <header class="header">
-                    <h1><a href="/">Education World</a></h1>
+                    <h1><a href="/">Learn Go</a></h1>
         
                     <nav>
                         <ul>
@@ -43,10 +43,10 @@ const Home = () => {
                     <div class="pdt"></div>
                     <h1>Sobre</h1>
 
-                    <p>A Education World é uma plataforma onde é disponibilizado conteúdo gratuito para todos os tipos de pessoas. Temos professores qualificados prontos para te ensinar, contamos também com a plataforma mobile para sua melhor experiência. Aqui você aprende do seu jeito e no seu tempo.</p>
+                    <p>A Learn Go é uma plataforma onde é disponibilizado conteúdo gratuito para todos os tipos de pessoas. Temos professores qualificados prontos para te ensinar, contamos também com a plataforma mobile para sua melhor experiência. Aqui você aprende do seu jeito e no seu tempo.</p>
 
                     <p>
-                        Nós somos uma equipe capacitada e especializada em ensino e queremos trazer para você a melhor experiência possível. Com a Education World você pode aprender sobre diversos assuntos que te interessam quando e onde quiser, seja do seu celular, tablet ou computador.
+                        Nós somos uma equipe capacitada e especializada em ensino e queremos trazer para você a melhor experiência possível. Com a Learn Go você pode aprender sobre diversos assuntos que te interessam quando e onde quiser, seja do seu celular, tablet ou computador.
                     </p>
                 </section>
 
@@ -148,7 +148,7 @@ const Home = () => {
             </section>
 
             <footer>
-                <div>Copyright &copy; 2020 Education World</div>
+                <div>Copyright &copy; 2020 Learn Go</div>
             </footer>
         </div>
     )
