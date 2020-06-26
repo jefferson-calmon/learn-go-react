@@ -12,7 +12,11 @@ export const VideoOne = () => {
         <div className="started">
             <Top />
 
-            <ContainerVideo srcFrame="https://www.youtube.com/embed/dJyJ77GkhBE" moment1={['1:03', 'Primeiros passos para começar investir']} moment2={['5:00', 'Explicação dos principais conceitos']} moment3={['16:23', 'Simulação de um investimento inicial']} />
+            <ContainerVideo 
+            srcFrame="https://www.youtube.com/embed/dJyJ77GkhBE" 
+            moment1={['1:03', 'Primeiros passos para começar investir.']} 
+            moment2={['5:00', 'Explicação dos principais conceitos.']} 
+            moment3={['16:23', 'Simulação de um investimento inicial.']} />
         </div>
     )
 }
@@ -20,7 +24,12 @@ export const VideoTwo = () => {
     return(
         <div className="started">
             <Top />
-            <ContainerVideo srcFrame="https://www.youtube.com/embed/YhK0jVYq4IY" />
+            <ContainerVideo 
+            srcFrame="https://www.youtube.com/embed/YhK0jVYq4IY" 
+            moment1={['0:35', '"Trabalhar te gera sustento mas, só o trabalho depois do trabalho te enriquece."']}
+            moment2={['2:38', 'Começo das dicas no vídeo']}
+            moment3={['16:45', 'Conclusão sobre as dicas dadas no vídeo.']}
+            />
 
         </div>
     )
@@ -31,7 +40,12 @@ export const VideoTre = () => {
     return(
         <div className="started">
             <Top />
-            <ContainerVideo srcFrame="https://www.youtube.com/embed/crZgbrvcjeM"/>
+            <ContainerVideo 
+            srcFrame="https://www.youtube.com/embed/crZgbrvcjeM"
+            moment1={['0:20', 'Explicação do conteúdo do vídeo.']}
+            moment2={['3:08', '"Pense nos seus objetivos"']}
+            moment3={['4:41', 'Sempre peça ajuda dos outros.']}
+            />
             
         </div>
     )
@@ -42,7 +56,13 @@ export const VideoFou = () => {
     return(
         <div className="started">
             <Top />
-            <ContainerVideo srcFrame="https://www.youtube.com/embed/lgD_G0_5EYE"/>
+            <ContainerVideo 
+            srcFrame="https://www.youtube.com/embed/lgD_G0_5EYE"
+            moment1={["0:35", 'Explicação metodologias ativas.']}
+            moment2={["3:37", '"O aluno ver a aula ao vivo direto com o professor"']}
+            moment3={["4:57", 'Resultado do sorteio do vídeo.']}
+
+            />
         </div>
     )
 }
