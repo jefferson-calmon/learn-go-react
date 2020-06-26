@@ -228,12 +228,12 @@ div.gridVideos .box-video{
     flex-direction: column;
 }
 
-div.box-video .image-video, div.woman-teacher{
+div.box-video .image-video, #woman-teacher{
     width: 100%;
     height: 65%;
 }
 
-.woman-teacher{
+#woman-teacher{
     background: url('./assets/woman-teacher.png');
     background-size: cover;
 }

@@ -59,7 +59,7 @@ const Started = () => {
                         <div className="gridVideos">
 
                             <div className="box-video">
-                                <div className="image-video woman-teacher"></div>
+                                <div className="image-video" id="woman-teacher"></div>
                                 <div className="legendVideo">dawndiaewfheuhfou</div>
                             </div>
                             <div className="box-video">
