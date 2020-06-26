@@ -12,13 +12,15 @@ const Started = () => {
     return(
         <div className="started">
             <header id="topo">
-                <div className="corp">
-                    <div className="image-logo-corporation">
-                        <img src={Light} alt="Logo corporation"/>
+                <a href="/started">
+                    <div className="corp">
+                        <div className="image-logo-corporation">
+                            <img src={Light} alt="Logo corporation"/>
+                        </div>
+    
+                        <div className="text"><span className="textTitle">Light Corp.</span><br/> A hackathon company.</div>
                     </div>
-
-                    <div className="text"><span className="textTitle">Light Corp.</span><br/> A hackathon company.</div>
-                </div>
+                </a>
 
                 <div className="fastTools">
                     <div className="inputBox">

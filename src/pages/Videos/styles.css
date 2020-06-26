@@ -1,0 +1,34 @@
+div.watch{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.watchVideo{
+    width: 75%;
+    background: #ddd;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+iframe.frame{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.infoVideo{
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    margin: 50px 0;
+}
+
+.infoVideo div.information{
+    padding: 30px;
+    background: red;
+}
