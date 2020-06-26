@@ -221,14 +221,14 @@
 div.gridVideos .box-video{
     width: 175px;
     height: 175px;
-    background: blue;
+    /* background: blue; */
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.103);
     border-radius: 13px;
     display: flex;
     flex-direction: column;
 }
 
-div.box-video .image-video, #woman-teacher{
+div.box-video .image-video{
     width: 100%;
     height: 65%;
 }
@@ -236,6 +236,26 @@ div.box-video .image-video, #woman-teacher{
 #woman-teacher{
     background: url('./assets/woman-teacher.png');
     background-size: cover;
+    /* background-position: 50% 50%; */
+    border-radius: 13px 13px 0 0;
+}
+
+#art-man{
+    background: url('./assets/art-man.png');
+    background-size: cover;
+    border-radius: 13px 13px 0 0;
+}
+
+#ead{
+    background: url('./assets/ead-group.png');
+    background-size: cover;
+    border-radius: 13px 13px 0 0;
+}
+
+#distance{
+    background: url('./assets/ensino-distance.png');
+    background-size: cover;
+    border-radius: 13px 13px 0 0;
 }
 
 div.box-video .legendVideo{
@@ -243,4 +263,5 @@ div.box-video .legendVideo{
     height: 35%;
     background: #fff;
     padding: 10px 5px;
+    font-size: 14px;
 }
