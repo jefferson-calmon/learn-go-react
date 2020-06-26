@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaSearch, FaBell, FaCog, FaPlay } from 'react-icons/fa'
+import { FaSearch, FaBell, FaCog, FaPlay, FaCheckCircle } from 'react-icons/fa';
 
 import './styles.css';
 
@@ -75,6 +75,44 @@ const Started = () => {
                                 <div className="legendVideo">Aplicando na prática o ensino a distâcia.</div>
                             </div>
 
+                        </div>
+
+                        <div className="progress" id="progress">
+                            <div className="historyColor"></div>
+
+                            <div className="checkVideo">
+                                <div className="boxCheck">
+                                    <div className="circle-hidden"></div>
+                                    <div className="circle-hidden"></div>
+                                    <FaCheckCircle className="iconCheck"/>
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                </div>
+
+                                <div className="boxCheck">
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                    <FaCheckCircle className="iconCheck"/>
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                </div>
+
+                                <div className="boxCheck">
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                    <FaCheckCircle className="iconCheck"/>
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                </div>
+
+                                <div className="boxCheck">
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                    <FaCheckCircle className="iconCheck"/>
+                                    <div className="circle-hidden"></div>
+                                    <div className="circle-hidden"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
