@@ -1,7 +1,12 @@
-.container{
+.started{
     background: #F0F0F5 0% 0% no-repeat padding-box;
     min-height: 100vh;
-    padding: 0 75px;
+    padding: 0 50px;
+}
+
+.started, html, body{
+    height: 100%;
+    background: #F0F0F5;
 }
 
 #topo{
@@ -35,4 +40,207 @@
     font-size: 13px;
     display: block;
     float: right;
+}
+
+.fastTools{
+    display: flex;
+    flex-direction: row;
+}
+
+.fastTools .inputBox{
+    height: 50px;
+    width: 240px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputBox .input{
+    position: relative;
+    height: 50px;
+    width: 80%;
+}
+/* 
+.inputBox .input::before{
+    position: absolute;
+    content: '';
+    right: 0;
+    height: 100%; 
+    width: 3px;
+    background: #a1a1a1;
+} */
+
+.inputBox .input input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: transparent;
+}
+.inputBox .input input:focus ~ span{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.inputBox .input span{
+    position: absolute;
+    /* background: red; */
+    color: #ACACAC;
+    line-height: 50px;
+    padding: 0 20px;
+    width: 100%;
+    font-weight: 500;
+    z-index: 1;
+    letter-spacing: .5px;
+    pointer-events: none;
+    transition: .4s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.iconSearch{
+    width: 20%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1.5px solid #ddd;
+    margin: auto;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #A5A5A5;
+    cursor: pointer;
+}
+
+.config{
+    margin: 0 50px;
+    margin-right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.setting{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: #656565;
+}
+
+.settingIcon{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+    position: relative;
+    cursor: pointer;
+}
+
+
+#street{
+    min-height: 75vh;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 260px auto;
+    gap: 50px;
+}
+
+#street div.infoBoxVideo, #street div.boxVideo{
+    background: #fff;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.055);
+}
+
+#street div.infoBoxVideo{
+    background: url('./assets/banner-lateral@2x.png') no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    position: relative;
+}
+
+#street div.infoBoxVideo .contentInfoBoxVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #fff;
+}
+
+.contentInfoBoxVideo span{
+    font-weight: 900;
+    font-size: 25px;
+    margin-left: 7px;
+}
+
+#street div.boxVideo{
+    padding: 30px;
+}
+
+.boxVideo h3{
+    font-weight: 500;
+    font-size: 22px;
+    color: #646464;
+}
+.boxVideo h3 span{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.videos-started{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videos-started div.gridVideos{
+    /* background: red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+div.gridVideos .box-video{
+    width: 175px;
+    height: 175px;
+    background: blue;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.103);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.box-video .image-video, div.woman-teacher{
+    width: 100%;
+    height: 65%;
+}
+
+.woman-teacher{
+    background: url('./assets/woman-teacher.png');
+    background-size: cover;
+}
+
+div.box-video .legendVideo{
+    width: 100%;
+    height: 35%;
+    background: #fff;
+    padding: 10px 5px;
 }
