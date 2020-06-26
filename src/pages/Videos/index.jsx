@@ -11,7 +11,8 @@ export const VideoOne = () => {
     return(
         <div className="started">
             <Top />
-            <ContainerVideo srcFrame="https://www.youtube.com/embed/dJyJ77GkhBE" />
+
+            <ContainerVideo srcFrame="https://www.youtube.com/embed/dJyJ77GkhBE" moment1={['1:03', 'Primeiros passos para começar investir']} moment2={['5:00', 'Explicação dos principais conceitos']} moment3={['16:23', 'Simulação de um investimento inicial']} />
         </div>
     )
 }
@@ -57,7 +58,7 @@ class ContainerVideo extends React.Component{
                 </div>
 
                 <div className="infoVideo">
-                    <Information text={<h1>Hello woe</h1>} />
+                    <Information title={this.props} moment1={this.props.moment1} moment2={this.props.moment2} moment3={this.props.moment3} />
                 </div>
             </div>
         )
@@ -68,8 +69,39 @@ class ContainerVideo extends React.Component{
 class Information extends React.Component{
     render(){
         return(
-            <div className="infomation">
-                {this.props.text}
+            <div id="information">
+                <h2>Momentos<br />Importantes</h2>
+
+                <div className="moments">
+                    <div className="moment">
+                        <div className="time">
+                            <div className="circleHidden3"></div>
+                            <span>{this.props.moment1[0]}</span>
+                            <div className="circleBot"></div>
+                        </div>
+                        <div className="time-legend">
+                            {this.props.moment1[1]}
+                        </div>
+                    </div>
+
+                    <div className="moment">
+                        <div className="time">
+                            <div className="circleTop"></div>
+                            {this.props.moment2[0]}
+                            <div className="circleBot"></div>
+                        </div>
+                        <div className="time-legend">{this.props.moment2[1]}</div>
+                    </div>
+
+                    <div className="moment">
+                        <div className="time">
+                            <div className="circleTop"></div>
+                            {this.props.moment3[0]}
+                            <div className="circleHidden2"></div>
+                        </div>
+                        <div className="time-legend">{this.props.moment3[1]}</div>
+                    </div>
+                </div>
             </div>
         )
     }
