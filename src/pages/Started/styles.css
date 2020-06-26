@@ -4,6 +4,11 @@
     padding: 0 50px;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .started, html, body{
     height: 100%;
     background: #F0F0F5;
@@ -316,5 +321,5 @@ div#progress{
     color: #D9D9D9;
 }
 
-#progress .checkVideo .boxCheck .iconCheck{
-}
+/* #progress .checkVideo .boxCheck .iconCheck{
+} */

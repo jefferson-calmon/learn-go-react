@@ -58,22 +58,33 @@ const Started = () => {
                     <div className="videos-started">
                         <div className="gridVideos">
 
-                            <div className="box-video">
-                                <div className="image-video" id="woman-teacher"></div>
-                                <div className="legendVideo">Estou perdido(a).<br/>Por onde começar?</div>
-                            </div>
-                            <div className="box-video">
-                                <div className="image-video" id="art-man"></div>
-                                <div className="legendVideo">Como adaptar o meu cenário?</div>
-                            </div>
-                            <div className="box-video">
-                                <div className="image-video" id="ead"></div>
-                                <div className="legendVideo">Como se organizar para o EAD?</div>
-                            </div>
-                            <div className="box-video">
-                                <div className="image-video" id="distance"></div>
-                                <div className="legendVideo">Aplicando na prática o ensino a distâcia.</div>
-                            </div>
+                            <a href="/started/video/1">
+                                <div className="box-video">
+                                    <div className="image-video" id="woman-teacher"></div>
+                                    <div className="legendVideo">Estou perdido(a).<br/>Por onde começar?</div>
+                                </div>
+                            </a>
+
+                            <a  href="/started/video/2">
+                                <div className="box-video">
+                                    <div className="image-video" id="art-man"></div>
+                                    <div className="legendVideo">Como adaptar o meu cenário?</div>
+                                </div>
+                            </a>
+
+                            <a  href="/started/video/3">
+                                <div className="box-video">
+                                    <div className="image-video" id="ead"></div>
+                                    <div className="legendVideo">Como se organizar para o EAD?</div>
+                                </div>
+                            </a>
+
+                            <a  href="/started/video/4">
+                                <div className="box-video">
+                                    <div className="image-video" id="distance"></div>
+                                    <div className="legendVideo">Aplicando na prática o ensino a distâcia.</div>
+                                </div>
+                            </a>
 
                         </div>
 
