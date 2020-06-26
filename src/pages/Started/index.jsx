@@ -1,16 +1,32 @@
 import React from 'react';
-import { FaSearch, FaBell, FaCog, FaPlay, FaCheckCircle } from 'react-icons/fa';
+import { FaSearch, FaBell, FaCog, FaPlay, FaCheckCircle, FaTimes } from 'react-icons/fa';
 
 import './styles.css';
-
 
 import Light from './assets/light_bulb.png';
 import profileImage from './assets/profile.png';
 
+let state = true;
+
 
 const Started = () => {
+    const showMessage = () => {
+        const msg = document.querySelector('#message')
+        const bkg = document.querySelector('#background')
+
+        if (state){
+            msg.className = 'active'
+            bkg.className = 'started active'
+            state = !state
+        }else{
+            msg.className = ''
+            bkg.className = 'started'
+            state = !state
+        }
+    }
+
     return(
-        <div className="started">
+        <div className="started" id="background">
             <header id="topo">
                 <a href="/started">
                     <div className="corp">
@@ -48,7 +64,7 @@ const Started = () => {
 
 
             <section id="street">
-                <div className="infoBoxVideo">
+                <div className="infoBoxVideo" onClick={showMessage}>
                     <div className="contentInfoBoxVideo">
                         <FaPlay />
                         <span>Videos</span>
@@ -129,6 +145,19 @@ const Started = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="message">
+                <div className="close" onClick={showMessage}>
+                    <FaTimes />
+                </div>
+                <h1>Primeiro passos</h1>
+
+                <p>Parabens por ter chegado até aqui, isso significa que você realmente quer aprender.</p>
+                <p>Nesta página você podera dar os seus primeiros passos, vendo os vídeos que selecionamos para você.</p>
+
+                <p>É importante que você assista todos antes de continuar, Boa sorte</p>
+                <p className="credito">-Equipe vencedora</p>
             </section>
         </div>
     )

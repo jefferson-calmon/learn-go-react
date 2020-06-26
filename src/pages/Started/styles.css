@@ -14,6 +14,10 @@ a{
     background: #F0F0F5;
 }
 
+/* .started.active{
+    filter: blur(50px);
+} */
+
 #topo{
     padding: 51px 0;
     display: flex;
@@ -323,3 +327,57 @@ div#progress{
 
 /* #progress .checkVideo .boxCheck .iconCheck{
 } */
+
+#message{
+    position: fixed;
+    width: 40%;
+    min-height: 60%;
+    background: #fff;
+
+    /* z-index: 100000; */
+
+    opacity: 0.5;
+    visibility: hidden;
+
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    transition: .6s;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
+}
+
+.started section#message.active{
+    visibility: visible;
+    left: 50%;
+    opacity: 1;
+    transform-origin: right;
+}
+
+#message{
+    padding: 30px;
+    color: #262626;
+    z-index: 1;
+}
+
+#message .close{
+    text-align: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#message h1{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 39px;
+}
+#message p{
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 27.5px;
+    z-index: 1;
+}
+
+.credito{
+    text-align: right;
+    font-size: 15px;
+}
