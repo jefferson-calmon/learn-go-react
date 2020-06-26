@@ -364,6 +364,9 @@ div#progress{
     font-size: 30px;
     cursor: pointer;
 }
+#message .close:hover{
+    color: #262626b0;
+}
 
 #message h1{
     margin: 30px 0;
