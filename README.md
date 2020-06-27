@@ -1,4 +1,4 @@
-<div>
+<div align="center">
     <h1>Learn Go</h1>
     <p>A melhor forma de aprender online.</p>
     <img src="./img-readme/banner.png" alt="Banner"/>
@@ -10,7 +10,7 @@ A Learn Go é uma plataforma online para capacitação de pessoas que querem ter
 
 Learn Go é a melhor maneira de aprender onde e quando quiser.
 
-## :artficial-satelite: Tecnologias
+## :artficial_satelite: Tecnologias
 
 Para densenvolver este projeto eu usei as seguintes tecnologias:
 
