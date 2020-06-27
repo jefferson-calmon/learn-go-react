@@ -4,7 +4,7 @@ import { FaSearch, FaBell, FaCog, FaPlay, FaCheckCircle, FaTimes } from 'react-i
 import './styles.css';
 
 import Light from './assets/light_bulb.png';
-import profileImage from './assets/profile.png';
+import profileImage from './assets/profile.png'; 
 
 let state = true;
 

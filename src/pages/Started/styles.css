@@ -1,6 +1,6 @@
 .started{
     background: #F0F0F5 0% 0% no-repeat padding-box;
-    min-height: 100vh;
+    min-height: 100vh; 
     padding: 0 50px;
 }
 
@@ -401,4 +401,32 @@ div#progress{
 .credito{
     text-align: right;
     font-size: 15px;
+}
+
+
+@media (max-width: 768px){
+    .started{
+        padding: 0 20px;
+    }
+
+    #street div.infoBoxVideo{
+        display: none;
+    }
+
+    #street div.boxVideo{
+        width: 100%;
+    }
+
+    .videos-started{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .videos-started  div.gridVideos{
+        display: flex;
+        flex-direction: column;
+    }
+    .videos-started  div.gridVideos .progress{
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 *, input, button{
@@ -38,6 +38,18 @@ a{
     justify-content: space-between;
     padding: 40px 50px;
     background: transparent;
+    z-index: 1;
+}
+
+.header .toggle-menu{
+    /* display: ; */
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    display: none;
     z-index: 1;
 }
 
@@ -173,6 +185,7 @@ section.content section h1{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 50px;
     margin-top: 100px;
+    transition: gap grid-tenplate-columns 1s;
 }
 
 .box{
@@ -270,4 +283,117 @@ footer div{
     letter-spacing: 2px;
     font-weight: 300;
     color: #fff;
+}
+
+@media (max-width: 850px){
+    .banner .header{
+        padding: 40px 40px;
+    }
+
+    .header .toggle-menu{
+        display: block;
+        right: 40px;
+    }
+
+    #courses .contentCourse{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 110px;
+    }
+
+    .box{
+        width: 225px;
+        padding: 10px 5px;
+    }
+
+    .header nav{
+        visibility: hidden;
+    }
+
+    .header nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80%;
+        flex-direction: column;
+        background: #F0F0F5;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: .6s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    .header nav ul.active{
+        visibility: visible;
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    .header nav ul li{
+        margin: 25px 0;
+    }
+
+    .header nav ul li::before{
+        color: #000;
+    }
+
+    .header nav ul li a{
+        color: #000;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+    }
+
+    @media (max-width: 700px){
+        .contentBanner h1{
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        .contentBanner h2{
+            font-size: 16px;
+            /* padding: 0 10px; */
+        }
+
+        section.content{
+            width: 85%;
+        }
+
+        section.content p{
+            font-size: 17px;
+        }
+
+        section.content section h1{
+            font-size: 30px;
+        }
+
+        section.content section#help h2{
+            font-size: 20px;
+        }
+
+        #courses{
+            width: 100%;
+        }
+        #courses .contentCourse{
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            width: 100%;
+        }
+        .box{
+            width: 250px;
+            padding: 10px 5px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .box:hover{
+            transform: none;
+        }
+        .boxHelp:hover{
+            transform: none;
+        }
+    }
 }
