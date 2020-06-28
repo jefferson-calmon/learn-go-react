@@ -143,6 +143,46 @@ const Started = () => {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="progress-mobile">
+                            <div className="box-progress-mobile">
+                                <div className="box-check-mobile">
+                                    <div className="circle-hidden"></div>
+                                    <div className="circle-hidden"></div>
+                                    <FaCheckCircle className="icon-check-mobile"/>
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                </div>
+                            </div>
+                            <div className="box-progress-mobile">
+                                <div className="box-check-mobile">
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                    <FaCheckCircle className="icon-check-mobile"/>
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                </div>
+                            </div>
+                            <div className="box-progress-mobile">
+                                <div className="box-check-mobile">
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                    <FaCheckCircle className="icon-check-mobile"/>
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                </div>
+                            </div>
+                            <div className="box-progress-mobile">
+                                <div className="box-check-mobile">
+                                    <div className="circle"></div>
+                                    <div className="circle"></div>
+                                    <FaCheckCircle className="icon-check-mobile"/>
+                                    <div className="circle-hidden"></div>
+                                    <div className="circle-hidden"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
                     </div>
                 </div>
             </section>

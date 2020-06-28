@@ -278,6 +278,10 @@ div.box-video .legendVideo{
     color: #646464;
 }
 
+.progress-mobile{
+    display: none;
+}
+
 div#progress{
     position: relative;
     width: 100%;
@@ -406,27 +410,94 @@ div#progress{
 
 @media (max-width: 768px){
     .started{
-        padding: 0 20px;
+        padding: 20px;
     }
 
-    #street div.infoBoxVideo{
+    #topo{
+        /* display: none; */
+        padding: 0 10px;
+    }
+
+    #topo .fastTools .inputBox{
+        display: none;
+    }
+
+    #topo .fastTools .config .setting{
+        display: none;
+    }
+
+    #topo .fastTools .config{
+        margin: 0;
+        float: right;
+        width: auto;
+    }
+
+    #street{
+        display: block;
+    }
+
+    #street .infoBoxVideo{
         display: none;
     }
 
     #street div.boxVideo{
         width: 100%;
+        /* display: none; */
+        z-index: 1;
     }
 
     .videos-started{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
     }
-    .videos-started  div.gridVideos{
+
+    .videos-started div.gridVideos{
         display: flex;
         flex-direction: column;
+        width: 68%;
+        height: 150vh;
+        align-items: center;
     }
-    .videos-started  div.gridVideos .progress{
+
+    div.gridVideos .box-video{
+        margin-top: 25px;
+    }
+
+    div.progress-mobile{
+        position: relative;
+        /* background: green; */
+        height: 150vh;
+        width: 27%;
+        display: block;
+    }
+
+    .box-progress-mobile{
+        height: 175px;
+        width: 100%;
+        /* margin-bottom: 30px; */
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .icon-check-mobile{
+        color: #D9D9D9;
+        transform: translateX(-2.5px);
+    }
+
+    .circle{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .videos-started div.progress{
+        display: none;
     }
 }

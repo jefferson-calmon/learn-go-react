@@ -14,7 +14,7 @@ export const VideoOne = () => {
 
             <ContainerVideo 
             srcFrame="https://www.youtube.com/embed/dJyJ77GkhBE" 
-            moment1={['1:03', 'Primeiros passos para começar investir.']} 
+            moment1={['1:03', 'Primeiros passos para começar investir.']}   
             moment2={['5:00', 'Explicação dos principais conceitos.']} 
             moment3={['16:23', 'Simulação de um investimento inicial.']} />
         </div>
